@@ -1,0 +1,83 @@
+///$tab DIM - Master Calendar
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='$#,##0.00;($#,##0.00)';
+SET TimeFormat='h:mm:ss TT';
+SET DateFormat='M/D/YYYY';
+SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT';
+SET FirstWeekDay=6;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='en-US';
+SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec';
+SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December';
+SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun';
+SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
+
+Let vSelectedDay = '1';
+Let vSelectedMonth = '1';
+Let vSelectedYear = '2018';
+Let vMinFetchDate = MakeDate(vSelectedYear,vSelectedMonth,vSelectedDay);
+
+  Let vTodaysDate = Today();
+  Let vTodaysDateYear = Year(vTodaysDate);
+
+  Let vMinCalendarDate = Num(MakeDate(2018,1,1));
+  Let vMaxCalendarDate = Num(MakeDate(vTodaysDateYear+1,12,31));
+ 
+ //Let vMaxCalendarDate = Num(MakeDate(2019,09,30));
+  
+  Master_Calendar: 
+  Load 
+    TempDate AS [Master Calendar Date Num], 
+    Date(TempDate) As [Master Calendar Date],
+    Week(TempDate) As Week, 
+    Year(TempDate) As Year, 
+    Month(TempDate) As Month,  
+    Day(TempDate) As Day, 
+    'Q' & ceil(month(TempDate) / 3) AS Quarter, 
+    Week(weekstart(TempDate)) & '-' & WeekYear(TempDate) as [Week Year], 
+    WeekDay(TempDate) as [Week Day],
+    
+    
+   // CEIL(NUM(MonthEnd(Max(date([TempDate]))) - MonthStart(MIN(date([TempDate]))))) as [Month Days],
+  //  Num(MonthStart( Date(TempDate)) - MonthEnd( Date(TempDate)) + 1) as [Month Days],
+  NUM( Monthend(( Date(TempDate))) -Monthstart(( Date(TempDate))) , '0') as [Month Days],
+    
+    Num(Month(TempDate)) as [Month Num],
+    Month(TempDate) & '-' & Day(TempDate) as [Month Day],
+    MonthName(TempDate) as [Month Year],
+    
+    
+       
+    (Year(TempDate)-1)*12 + Num(Month(TempDate)) As [Month ID],
+    (Year(TempDate)-1)*12 + Num(Month(TempDate)) +  Num(Day(TempDate))  As [Day ID],
+    (Year(TempDate)-1)*4 + Num(Ceil(Month(TempDate)/3)) As [Quarter ID],
+    (Year(TempDate)) & '-'&    'Q' & ceil(month(TempDate) / 3)  as [Quarter Year]
+  ;
+  
+  
+  //=== Generate a temp table of dates === 
+  LOAD 
+    date($(vMinCalendarDate) + IterNo()-1) AS TempDate,
+    $(vMaxCalendarDate) // Used in InYearToDate() above, but not kept 
+  AutoGenerate 1 WHILE $(vMinCalendarDate) + IterNo() -1<= $(vMaxCalendarDate);
+  
+
+
+
+  Currency_Rates:
+  NoConcatenate
+  Load DISTINCT
+      'SAR' 		AS  [Currency Key],
+      'ZZZ' 		As  [Currency Sorting Key],
+      'SAR' 		AS  [Currency Symbol],
+      'Saudi Riyal' AS  [Currency],
+      '41444' 		AS  [Currency Conversion Rate Date Num],
+      '1' 		AS  [Currency Average Rate],
+      '01/01/2019'	AS  [Currency EOD Rate]
+  From [lib://QVD_Conn_IFP/Currency_Rates.qvd]
+  (qvd);

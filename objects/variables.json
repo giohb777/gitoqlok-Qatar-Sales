@@ -1,0 +1,122 @@
+[
+  {
+    "qInfo": {
+      "qId": "0c507e44-0e46-41c9-aa36-ff33ef899c75",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vMinCalendarDate",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "43101",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "0feb9590-e623-4976-9625-7e67fe3dd0e9",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vSelectedDay",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "2bb4eeed-9ee6-4946-bfd6-23f3643a9e6f",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vSelectedMonth",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "4ac5f93e-d4bc-490e-a426-53647e12d12b",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vTodaysDate",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "5/27/2021",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "50b89913-75b8-4d8f-ad08-678d8f49d841",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vTodaysDateYear",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "2021",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "71a12ea0-26b9-40e3-9160-b02bf11d508c",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vMaxCalendarDate",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "44926",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "72813c3a-82e1-4e1f-a9bc-f7eab42c679f",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vMinFetchDate",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "1/1/2018",
+    "qIsScriptCreated": true
+  },
+  {
+    "qInfo": {
+      "qId": "938ce7ae-02cf-4737-a15b-174786cd9ac4",
+      "qType": "variable"
+    },
+    "qMetaDef": {},
+    "qName": "vSelectedYear",
+    "qNumberPresentation": {
+      "qType": "U",
+      "qnDec": 10,
+      "qUseThou": 0
+    },
+    "qDefinition": "2018",
+    "qIsScriptCreated": true
+  }
+]

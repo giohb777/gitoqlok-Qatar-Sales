@@ -1,0 +1,46 @@
+///$tab FACT - Invoicing 
+
+ Sales_Shared_Dimensions:
+  NoConcatenate  
+  LOAD
+
+"Invoice Number",
+ "Invoice Key",
+'' AS "Sales Shared Key",
+'Net Sales' As "Sales Type",
+'ICP Sales' As "Sales Source",
+'41444' 		AS  [Currency Conversion Rate Date Num],
+'4.0' As [Product Manager Key],
+0 as "Invoice US Ton",
+0 as "Invoice Lbp",
+"Invoice Values Sign",
+"Invoice Customer Key" As "Invoice Customer Key",
+"Order Customer Key"    As "Customer Key",
+ [Item Key]   as "Item Key",
+ "Local Currency Code",
+[Invoice Amount Local Curr],
+Upper("Item Key" &'|'&  "Order Customer Key") as ShoppersCombinationKey,
+Num(DayStart([Master Calendar Date])) As [Master Calendar Date Num],
+if([Invoice Cartons] < 0 ,'Return','Normal Invoice') as "Invoice Process",
+"Salesman Key", 
+// "Business Unit Key",
+"Invoice Quantity Unit", 
+"Invoice Quantity",
+"Invoice Pieces",
+"Invoice Kg",
+"Invoice Kg" / 1000 as    "Invoice MT",
+"Invoice SQM",
+"Invoice MSF",
+"Invoice Amount USD" AS "Invoice Amount USD",
+"Invoice Cost USD"   AS "Invoice Cost USD",
+"Invoice Pads",
+"Invoice Cartons" ,
+if([Invoice Cartons] < 0 ,[Invoice Amount USD]*-1, 0)   as "Invoice Returns USD",
+if("Invoice Pads" <> 0 , "Invoice Pads" , "Invoice Cartons") as [Invoice CTPD],
+
+"Gross Sales USD" 	  AS "Invoice Gross Sales USD",
+"QRA Amount USD"   	  as "Invoice QRA Amount USD",   //EMPTY
+"Free Amount USD" 	  as "Invoice Free Amount USD" ,
+"Item Cost SAR"
+
+FROM [lib://Folder_IFP_Admin_Group_Dev/QVD/NCP/Invoicing_Qatar.qvd] (qvd);

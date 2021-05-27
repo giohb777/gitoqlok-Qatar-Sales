@@ -1,0 +1,14 @@
+///$tab DIM -  Items
+Items:
+NoConcatenate
+Load
+[Item Key],
+[Item Name],
+[Item Inventory Unit],
+[Item Category],
+[Item Product Line],
+[Item Family],
+[Item Brand],
+[Item Channel],
+[Item Category Size]
+from  [lib://Folder_IFP_Admin_Group_Dev/QVD/NCP/Items_Qatar.qvd] (qvd);

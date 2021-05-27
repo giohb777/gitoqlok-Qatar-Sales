@@ -1,0 +1,894 @@
+[
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Field",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$FieldNo",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Fields",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Info",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Rows",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qIsHidden": true,
+    "qIsSystem": true,
+    "qName": "$Table",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key",
+      "$hidden",
+      "$system"
+    ],
+    "qSrcTables": []
+  },
+  {
+    "qName": "Addess",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Call Cycle",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Credit Days",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Credit Limit",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Currency",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Average Rate",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Conversion Rate Date Num",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Currency_Rates",
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Currency EOD Rate",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Key",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Sorting Key",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Currency Symbol",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Currency_Rates"
+    ]
+  },
+  {
+    "qName": "Customer",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Alternative Number",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Channel",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Key",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Customers",
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Customer Key Account",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Line Of Business",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Salesman Level1",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Salesman Level2",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Salesman Level3",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Salesman Level4",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Salesman Level5",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Salesman Name",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Customer Sub Channel",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Day",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Day ID",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Full Address",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Customers"
+    ]
+  },
+  {
+    "qName": "Invoice Amount Local Curr",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Amount USD",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice CTPD",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Cartons",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Cost USD",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Customer Key",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Free Amount USD",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Gross Sales USD",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Key",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Kg",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Lbp",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice MSF",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice MT",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Number",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Pads",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Pieces",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Process",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice QRA Amount USD",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Quantity",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Quantity Unit",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Returns USD",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice SQM",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice US Ton",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Invoice Values Sign",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Item Brand",
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Category",
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Category Size",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Channel",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Cost SAR",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Item Family",
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Inventory Unit",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Key",
+    "qTags": [
+      "$ascii",
+      "$text",
+      "$key"
+    ],
+    "qSrcTables": [
+      "Items",
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Item Name",
+    "qTags": [
+      "$text"
+    ],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Item Product Line",
+    "qTags": [],
+    "qSrcTables": [
+      "Items"
+    ]
+  },
+  {
+    "qName": "Local Currency Code",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Master Calendar Date",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Master Calendar Date Num",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$key",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Master_Calendar",
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Month",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Day",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Days",
+    "qTags": [
+      "$numeric"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month ID",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Num",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Month Year",
+    "qTags": [
+      "$numeric",
+      "$integer",
+      "$timestamp",
+      "$date"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Product Manager Key",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Quarter",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Quarter ID",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Quarter Year",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Sales Shared Key",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Sales Source",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Sales Type",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Salesman Key",
+    "qTags": [],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "ShoppersCombinationKey",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Sales_Shared_Dimensions"
+    ]
+  },
+  {
+    "qName": "Week",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Week Day",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Week Year",
+    "qTags": [
+      "$ascii",
+      "$text"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  },
+  {
+    "qName": "Year",
+    "qTags": [
+      "$numeric",
+      "$integer"
+    ],
+    "qSrcTables": [
+      "Master_Calendar"
+    ]
+  }
+]

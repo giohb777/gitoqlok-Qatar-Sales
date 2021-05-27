@@ -1,0 +1,24 @@
+///$tab DIM - Customers
+Customers:
+NoConcatenate
+LOAD
+    "Customer Key",
+    "Customer Alternative Number",
+    Customer,
+    "Customer Channel",
+    "Customer Sub Channel",
+    "Full Address",
+    Addess,
+    "Customer Salesman Name",
+    "Customer Salesman Level1",
+    "Customer Salesman Level2",
+    "Customer Salesman Level3",
+    "Customer Salesman Level4",
+    "Customer Salesman Level5",
+    "Credit Limit",
+    "Credit Days",
+    "Call Cycle",
+    "Customer Line Of Business",
+    "Customer Key Account"
+FROM [lib://Folder_IFP_Admin_Group_Dev/QVD/NCP/Customers_Qatar.qvd]
+(qvd);
